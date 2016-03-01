@@ -93,7 +93,7 @@ $('#2').waypoint(function() {
 		$("ul li").children().removeClass("active");
   $("#s2").addClass("active");
   
-}, { offset: 0 });
+}, { offset: 30 });
 
 $('#3').waypoint(function() {
   $("ul li").children().removeClass("active");

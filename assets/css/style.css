@@ -3,6 +3,12 @@ body {
 		font-size:16px;
 		color:#666;
 	}
+a,
+a:hover,
+a:focus{
+   color:#21ce99; 
+   text-decoration: none;
+}
 /*Jumbo*/
 .jumbotron	h1{
 		color:#ccc;
