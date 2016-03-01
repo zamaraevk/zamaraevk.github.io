@@ -1,0 +1,281 @@
+body {
+ 	font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+		color:#666;
+	}
+/*Jumbo*/
+.jumbotron	h1{
+		color:#ccc;
+		max-width:500px;
+		margin-right:100px;
+		margin-top:200px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:24px;
+		font-weight:bold;
+		text-transform:uppercase;
+ }
+.jumbotron	p{
+ 	color:#21ce99;
+		margin-top:30px;
+		margin-button:0px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:18px;
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+.jumbotron	button{
+	 margin-top:30px;
+ 	}		
+h2{
+		color:#21ce99;
+		padding:20px 0px;
+		
+ }
+	
+
+/*Nav*/
+.navbar {
+	z-index:9999;
+	position:fixed;
+	width:100%;
+	margin-bottom:0;
+	border:0;
+ border-radius:0;
+	background:white;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+ }
+.navbar-brand {
+	padding: 15px;
+	}
+.navbar-brand img {
+	width:100px;
+	}
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+ color: #000;
+ font-weight: bold;
+	margin-right:50px;
+}
+#nyc {
+ color: #21ce99;
+}
+.dropdown-menu {
+	box-shadow:none;
+	}
+.navbar-default .navbar-nav>li>a {
+	font-size:14px;
+	font-weight:600;
+	text-transform:uppercase;
+	border-bottom:2px solid #fff;
+	
+	transition: all 0.4s ease;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+		}
+.navbar-default .navbar-nav>li>a>i {
+	font-size:18px;
+		}			
+.navbar-default .navbar-nav>li>a:hover {
+	color: #21ce99;
+	}
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #21ce99;
+	background:#fff;
+		}	
+.active {
+	color: #21ce99 !important;
+	background:#fff;
+	border-bottom:2px solid #21ce99 !important;
+	}	
+/*Mobile Menu*/
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color:transparent;
+	text-align:center;
+	}
+/*Sandwich*/	
+.navbar-default .navbar-toggle .icon-bar {
+	background-color:black;
+	}
+.navbar-default .navbar-toggle {
+	border:none;
+	}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+ background-color:transparent;
+	border:none;
+}
+/*Hero*/
+.jumbotron {
+	height:100vh;
+    min-height: 500px;
+	margin-bottom:0;
+	padding-bottom:150px;
+	background:none;
+	text-align:left;
+    opacity:1;
+    background: url(../images/new_york.jpg) no-repeat center center;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+	}
+	
+#email-form	{
+	width:300px;
+	}
+	
+/*Forms Style*/
+input:focus{
+		border:1px solid #21ce99 !important;
+}
+.form-control{
+	color:#666666;
+	border:1px solid #21ce99;
+	border-radius:0px;
+}
+#navbar-search {
+	height:34px;
+	}
+/*Custom Buttons Style*/	
+.btn {
+    padding: 10px 20px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+				font-size:16px;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+				box-shadow:none;
+				background:transparent;
+    color: #21ce99;
+				border:2px solid #21ce99;
+				border-radius:0;
+}
+ 
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background:transparent;
+    color: #21ce99;
+				border:2px solid #21ce99;
+				border-radius:0;
+}
+ 
+/*Sections*/
+/*0. Note*/
+.note {
+	padding:50px;
+	font-size:96px;
+	font-weight:bold;
+	color:#21ce99;
+	background-color:#fff;
+	}
+.note p{
+	
+    font-size:18px;
+	color:#666;
+}
+.media-body p {
+    font-size:14px;
+}
+.media-left {
+    color:#21ce99;
+}
+.media-body, .media-left, .media-right {
+    vertical-align: middle;
+}
+
+/*1. Portfolio*/
+
+.portfolio {
+	background-color:#eee;
+	text-align:center;
+	padding-bottom:25px;
+	}
+.thumbnail {
+	margin:50px auto 0px auto;
+ padding: 0;
+ width: 304px;
+	height:250px;
+	border-radius:0;
+	}	
+.thumbnail:hover{
+    border: 1px solid #666;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.thumb-img {
+    display: block;
+    overflow: hidden;
+    width: 302px;
+    height:150px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.thumb-img img {
+    width: 100%;
+}
+.info {
+    width: 100%;
+    height:88px;
+    padding: 0;
+    margin: 0;
+}
+.name {
+    font-size: 13px;
+    font-family: Helvetica;
+    color: #666;
+    font-weight: bold;
+    margin: 10px 15px;
+    text-align: left;
+}
+.info .fa-github {
+    float: left;
+    margin-left: 15px;
+    font-size:36px;
+    color:#21ce99;
+}
+.imfo .fa-github-no {
+    color:#666;
+}
+.features {
+    float:right;
+    margin:11px 15px 0px 0px;
+    box-sizing: border-box;
+
+}
+.feature {
+    background: #21ce99;
+    font-size:13px;
+    color:white;
+    padding: 1px 7px;
+    border-radius: 25px;
+}
+/*2. About*/
+.about {
+	  padding:50px 0px;
+}
+.about h2{
+   text-align:center;
+			color:#666;
+			padding-bottom:50px;
+}
+.about div p{
+   text-align:justify;
+			color:#666;
+}
+/*Footer*/
+#footer {
+			background-color: #21ce99;
+			color:#fff;
+			padding:50px 0px;
+			font-size:14px;
+			text-align:center;
+	}
+
+#footer a i {
+			font-size:24px;
+			margin:0 20px;
+			color:#fff;
+		
+	}	
