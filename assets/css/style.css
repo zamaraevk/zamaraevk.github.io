@@ -95,9 +95,9 @@ h2{
 	background:#fff;
 		}	
 .active {
-	color: #21ce99;
+	color: #21ce99 !important;
 	background:#fff;
-	border-bottom:2px solid #21ce99;
+	border-bottom:1px solid #21ce99 !important;
 	}	
 /*Mobile Menu*/
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -294,7 +294,8 @@ input:focus{
     margin-top:150px;
   }
   .active {
-    border:none;
+    border:none !important;
+    color:#fff !important;
   }
   .navbar-nav {
   margin:0;	
