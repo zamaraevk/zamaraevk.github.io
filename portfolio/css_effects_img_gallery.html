@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Blog</title>
+	<style>
+body{
+ 	font-family:'helvetica neue', helvetica, arial, sans-serif;
+	 color:#2c3e50;
+		margin:0 auto;
+		max-width:960px;
+	}
+	img {
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+}
+p {
+ font-size:2.5em;
+ font-weight:300;
+	margin-left: 1.66%;
+	margin-right: 1.66%;
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 20px;
+}
+.green {
+  color: #21ce99;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+/*BLUR*/
+.blur img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.blur img:hover {
+				filter: blur(5px);
+				-webkit-filter: blur(5px);
+				-moz-filter: blur(5px);
+				-o-filter: blur(5px);
+				-ms-filter: blur(5px);
+				filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5'); 
+}
+/*BLUR END*/
+
+/*B&W*/
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+}
+/*B&W END*/
+/*OPACITY*/
+.opac {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.opac:hover {
+	opacity:0.5;
+	}
+/*OPACITY END*/	
+/*SHRINK*/
+.shrink img {
+
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.shrink img:hover {
+  width: 63.2%;
+}
+/*SHRINK END*/
+/*OPACITY+COLOR*/
+#image {
+	width:100%;
+	margin:0;
+	}	
+.container,
+.coming {
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+	}
+/*OPACITY+COLOR END*/
+/*FLASH*/
+.flash img:hover {
+		opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+	}	
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}	
+/*FLASH END*/
+/*OVERLAY*/
+#box {
+	background:url(http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg);
+	background-size:cover;
+	height:288px;
+	}
+ #overlay { 
+	 	background:rgba(0,0,0,.75);
+	 	text-align:center;
+			height:288px;
+	 	opacity:0;
+		-webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+		}
+#box:hover #overlay {
+   opacity:1;
+   }
+#plus {
+	  font-family:Helvetica;
+			color:rgba(255,255,255,.85);
+			font-size:46px;
+			}	
+/*OVERLAY END*/			
+/*COMING SOON*/		
+#box2 {
+	background:url(http://c2.staticflickr.com/8/7579/15482110477_0b0e9e5421_b.jpg);
+	background-size:cover;
+	height:288px;
+	}
+#box2:hover #overlay {
+ opacity:1;
+ }	
+#box3 {
+	background:url(http://c1.staticflickr.com/9/8788/17367410309_78abb9e5b6_b.jpg);
+	background-size:cover;
+	height:288px;
+	}
+#box3:hover #overlay {
+ opacity:1;
+ }	
+/*COMING SOON END*/		
+</style>
+</head>
+<body>
+
+<p>CSS image effects<br><span class="green" style="font-size:16px;">Just Hover</span></p>
+<!-- http://thestocks.im/ -->
+<div class="blur">
+<img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg">
+</div>
+<div class="bw">
+<img id="second" src="http://www.festivalofflightwesleychapel.com/image/105934649_scaled_288x288.jpg">
+</div>  
+<div class="opac">
+<img src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg">
+</div>
+<!-- Giuseppe Milo -->
+<div class="shrink">
+<img src="http://c1.staticflickr.com/9/8788/17367410309_78abb9e5b6_b.jpg">
+</div>
+<div class="container" style="background-color:#9b59b6;">
+		<img class="opac" id="image" src="http://c2.staticflickr.com/6/5814/20700286354_762c19bd3b_b.jpg" > 
+</div>
+<div class="flash">
+<img src="http://c2.staticflickr.com/6/5647/21137202535_404bf25729_b.jpg">
+</div>
+<!-- GörlitzPhotography -->
+<div class="container" id="box">
+  <div id="overlay">
+  <span id="plus"><br>+<br>Add Info<br>Here</span>
+		</div>
+</div>
+<div class="container" id="box2">
+  <div id="overlay">
+  <span id="plus"><br>+<br>Add Info<br>Here</span>
+		</div>
+</div>
+<div class="container" id="box3">
+  <div id="overlay">
+  <span id="plus"><br>+<br>Add Info<br>Here</span>
+		</div>
+</div>
+</body>
+</html>

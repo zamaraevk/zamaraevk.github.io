@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pure CSS</title>
+<style>
+/*Base*/
+body, html{
+    height:100%;
+				font-family:'helvetica neue', helvetica, arial, sans-serif;
+}
+body{
+    padding:0;
+    margin:0;
+}
+h1, p, li{
+    margin:0 0 1em;
+}
+section li{
+    margin:0 0 10px;
+}
+h1{	color:#2c3e50;
+    font-size:2.5em;
+    font-weight:300;
+}
+p{
+    font-size:1em;
+    line-height:1.5em;
+}
+.wrapper{
+    overflow:hidden;
+}
+section{
+				margin:0 auto;
+				max-width:960px;
+    padding:69px 30px 30px 80px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+
+}
+/*Base End*/
+/*Blog Post*/
+
+.post {
+  margin-bottom: 20px;
+}
+
+.date {
+  color: #21ce99;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.quote{
+  border-left: 5px solid #21ce99;
+  padding-left: 10px;
+}
+
+h2 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*Blog End*/
+/*Nav*/
+nav{
+    position:fixed;
+    top:23px;
+    left:0;
+    width:250px;
+    height:100%;
+    margin:0 0 0 -250px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+}
+nav ul{
+    width:250px;
+    height:100%;
+    padding:0;
+    margin:0;
+    list-style:none;
+    overflow:hidden;
+}
+nav li{
+    margin:0;
+}
+nav a{
+    font-size:1em;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+				color:#2c3e50;
+    text-decoration:none;
+    display:block;
+    padding:12px 15px;
+    font-weight:300;
+    letter-spacing:2px;
+}
+nav a:hover{
+    background:rgba(33,206,153,0.2);
+}
+/*Nav End*/
+/*Hamburger*/
+label{
+    display:block;
+    text-align:center;
+   	position:fixed;
+    top:10px;
+    left:10px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    z-index:500;
+}
+.con {
+      cursor: pointer;
+      display: inline-block;
+    }
+.bar {
+      display: block;
+      height: 1px;
+      width: 50px;
+      background: #21ce99;
+      margin: 14px auto;
+    }
+
+.con {
+      width: auto;
+      margin: 0 auto;
+      -webkit-transition: all .7s ease;
+      -moz-transition: all .7s ease;
+      -ms-transition: all .7s ease;
+      -o-transition: all .7s ease;
+      transition: all .7s ease;
+    }
+				
+.middle {
+      margin: 0 auto;
+}
+
+.bar {
+      -webkit-transition: all .7s ease;
+      -moz-transition: all .7s ease;
+      -ms-transition: all .7s ease;
+      -o-transition: all .7s ease;
+      transition: all .7s ease;
+}
+
+.con:hover .top{
+      -webkit-transform: translateY(15px) rotateZ(45deg);
+      -moz-transform: translateY(15px) rotateZ(45deg);
+      -ms-transform: translateY(15px) rotateZ(45deg);
+      -o-transform: translateY(15px) rotateZ(45deg);
+      transform: translateY(15px) rotateZ(45deg);
+      
+    }
+
+.con:hover .bottom {
+      -webkit-transform: translateY(-15px) rotateZ(-45deg);
+      -moz-transform: translateY(-15px) rotateZ(-45deg);
+      -ms-transform: translateY(-15px) rotateZ(-45deg);
+      -o-transform: translateY(-15px) rotateZ(-45deg);
+      transform: translateY(-15px) rotateZ(-45deg);
+    }
+
+.con:hover .middle {
+      width: 0;
+    }  
+/*Hamburger End*/
+/*Input Trigger*/
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ nav{
+    margin:0;
+}
+input[type="checkbox"]:checked ~ label{
+    left:250px;
+}
+input[type="checkbox"]:checked ~ section{
+    -webkit-transform:translate3d(260px, 0, 0);
+    -moz-transform:translate3d(260px, 0, 0);
+    -o-transform:translate3d(260px, 0, 0);
+    transform:translate3d(260px, 0, 0);
+}
+/*Input Trigger End*/
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <input type="checkbox" id="navigation" />
+    <label for="navigation">
+       <div class="con">
+        <div class="bar top"></div>
+        <div class="bar middle"></div>
+        <div class="bar bottom"></div>
+      </div>
+    </label>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Latest News</a>
+            </li>
+            <li>
+                <a href="">What We Do</a>
+            </li>
+            <li>
+                <a href="">Another Link</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+        <section>
+            <article>
+                <h1>CSS slide in push menu</h1>
+                <div class="post">
+	 																	<div class="date">November 23 2015</div>
+                   <h2>This Is My First Article</h2>
+                  	<p class="quote">
+                   Bacon ipsum dolor amet capicola strip steak landjaeger, biltong spare ribs rump cow ground round andouille sirloin pork. Short ribs pig prosciutto swine. Flank turducken turkey rump, leberkas shoulder bresaola ham hock tail drumstick corned beef. Venison pork chop beef jowl short ribs.
+                   </p>
+                  	<p>Bresaola short ribs pastrami, beef ribs spare ribs kielbasa ham tongue kevin landjaeger chicken ball tip. Pork chop beef kevin strip steak, chicken pork belly pastrami ham hock flank shoulder chuck turkey ribeye andouille ball tip. Leberkas ham ham hock pork loin. Filet mignon bacon pancetta leberkas turducken fatback tongue frankfurter jowl. Shoulder tenderloin chicken shank bacon shankle sirloin.</p>
+                   <p>Pork pig pork loin prosciutto meatball turkey beef ribs ground round. Pork belly salami shank pork chop turducken ribeye swine shoulder tri-tip fatback cupim short loin chuck strip steak. Rump pork chop t-bone.</p>
+                   <hr>
+                  </div>
+                  
+                  <!-- <hr> -->
+                  
+                  <div class="post">
+                   <div class="date">December 11 2015</div>
+                   <h2>This Is Another Article</h2>
+                  	<p class="quote">
+                   Bacon ipsum dolor amet capicola strip steak landjaeger, biltong spare ribs rump cow ground round andouille sirloin pork. Short ribs pig prosciutto swine. Flank turducken turkey rump, leberkas shoulder bresaola ham hock tail drumstick corned beef. Venison pork chop beef jowl short ribs.
+                   </p>
+                  	<p>Shankle beef ribs tongue strip steak flank landjaeger capicola hamburger chuck pancetta kevin. Sirloin landjaeger chicken, bresaola brisket swine short ribs turkey short loin ball tip porchetta ham hock. Capicola frankfurter jowl short loin. Kevin flank hamburger, beef venison shankle short loin bresaola frankfurter</p>
+                  	<p>Bresaola short ribs pastrami, beef ribs spare ribs kielbasa ham tongue kevin landjaeger chicken ball tip. Pork chop beef kevin strip steak, chicken pork belly pastrami ham hock flank shoulder chuck turkey ribeye andouille ball tip. Leberkas ham ham hock pork loin. Filet mignon bacon pancetta leberkas turducken fatback tongue frankfurter jowl. Shoulder tenderloin chicken shank bacon shankle sirloin.</p>
+                  </div>
+            </article>
+        </section>
+        
+    </div>
+</div>
+</body>
+</html>
