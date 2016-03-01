@@ -307,6 +307,8 @@ input:focus{
 		}
 		.navbar-nav {
 			text-align:-webkit-center;
+			text-align:-moz-center;
+			text-align:center;
 			margin:0;
 			}
 
