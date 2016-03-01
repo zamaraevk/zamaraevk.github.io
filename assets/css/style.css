@@ -277,5 +277,9 @@ input:focus{
 			font-size:24px;
 			margin:0 20px;
 			color:#fff;
-		
-	}	
+}	
+@media (max-width: 767px) {
+  .jumbotron h1 {
+    margin-top:150px;
+  }
+}
