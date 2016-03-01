@@ -293,4 +293,7 @@ input:focus{
   .jumbotron h1 {
     margin-top:150px;
   }
+  .active {
+    border:none;
+  }
 }
