@@ -299,25 +299,17 @@ input:focus{
   .navbar-nav {
   margin:0;	
   }
-  	.navbar-default .navbar-nav>li>a,
-		.navbar-default .navbar-nav>li>a:hover,
-		.navbar-default .navbar-nav>li>a:focus
-		{
-			color:#fff;
-			background-color:#21ce99;
-			width:50%;
-			margin:5px;
-		}
-			.nav>li {
-			margin-bottom:5px;
-			}
-		.navbar-default .navbar-nav>li>a,
-		.navbar-default .navbar-nav>li>a:hover,
-		.navbar-default .navbar-nav>li>a:focus
-		{
-			color:#fff;
-			background-color:#21ce99;
-			width:50%;
-			margin:0 auto;
-		}
+  
+.nav>li {
+margin-bottom:5px;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus
+{
+color:#fff;
+background-color:#21ce99;
+width:50%;
+margin:0 auto;
+}
 }
