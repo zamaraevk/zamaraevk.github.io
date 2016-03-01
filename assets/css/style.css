@@ -8,6 +8,8 @@ a:hover,
 a:focus{
    color:#21ce99; 
    text-decoration: none;
+   border:none;
+   outline:none;
 }
 /*Jumbo*/
 .jumbotron	h1{
