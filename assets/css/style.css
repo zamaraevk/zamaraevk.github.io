@@ -97,7 +97,7 @@ h2{
 .active {
 	color: #21ce99 !important;
 	background:#fff;
-	border-bottom:1px solid #21ce99 !important;
+	border-bottom:2px solid #21ce99 !important;
 	}	
 /*Mobile Menu*/
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
