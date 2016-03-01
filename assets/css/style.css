@@ -235,8 +235,8 @@ input:focus{
     font-size:36px;
     color:#21ce99;
 }
-.imfo .fa-github-no {
-    color:#666;
+.info .fa-github-no {
+    color:#666 !important;
 }
 .features {
     float:right;
