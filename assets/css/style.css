@@ -233,6 +233,7 @@ input:focus{
     margin: 0;
 }
 .name {
+    height: 36px;
     font-size: 13px;
     font-family: Helvetica;
     color: #666;
@@ -261,6 +262,7 @@ input:focus{
     color:white;
     padding: 1px 7px;
     border-radius: 25px;
+    margin-left: 5px;
 }
 /*2. About*/
 .about {

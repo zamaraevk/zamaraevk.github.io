@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="assets/images/ico.jpg" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
-				<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -101,169 +101,31 @@
     </div>
     </section> 
    <section id="2" class="portfolio">
-     <div class="container portfolio">
-       <div class="row">
-         <div class="col-sm-6 col-md-4">
+     <div class="container portfolio" ng-app="instantSearch" ng-controller="InstantSearchController">
+         
+         <div class="bar">
+		<!-- Create a binding between the searchString model and the text field -->
+		<input type="text" ng-model="searchString" placeholder="Enter your search terms" />
+	     </div>
+       <div class="row">  
+        <div ng-repeat="i in items | searchFor:searchString" class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <a target="_blank" href="/portfolio/email_portfolio/emailportfolio.html">
+            <a target="_blank" href="{{i.url}}">
               <div class="thumb-img">
-                 <img src="assets/images/thumbnails/emails.jpg"> 
+                 <img ng-src="{{i.image}}"> 
               </div>
             </a>  
               <div class="info">
-                  <div class="name">Email library with mobile/desktop view<br><br></div>
-                  <a target="_blank" href="https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/email_portfolio"><i class="fa fa-github"></i></a>
+                  <div class="name">{{i.title}}</div>
+                  <a target="_blank" href="{{i.url_git}}"><i class="fa fa-github"></i></a>
                 <div class="features">
-                    <span class="feature">Bootstrap 3</span>
-                    <span class="feature">HTML Email</span>
+                    <span class="feature" ng-repeat="child in i.features">{{child.feature}}</span>
                 </div>  
               </div>
           </div>
-        </div>
-         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-             <a target="_blank" href="http://www.granser.us">
-              <div class="thumb-img">
-                 <img src="assets/images/thumbnails/granser.jpg"> 
-              </div>
-            </a>  
-              <div class="info">
-                  <div class="name">Custom Wordpress theme for construction company</div>
-                  <i class="fa fa-github fa-github-no"></i>
-                <div class="features">
-                    <span class="feature">Wordpress Theme Cusomization</span>
-                </div>  
-              </div>
-          </div>
-        </div>
-           <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <a target="_blank" href="/portfolio/js/angularjs/ang.htm">
-              <div class="thumb-img">
-                 <img src="assets/images/thumbnails/angular.jpg">
-              </div>
-            </a>  
-              <div class="info">
-                  <div class="name">AngularJS Weather application<br><br></div>
-                  <a target="_blank" href="https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/js/angularjs"><i class="fa fa-github"></i></a>
-                <div class="features">
-                   <span class="feature">AngularJS</span>
-                   <span class="feature">Bootstrap 3</span> 
-                </div>  
-              </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <a target="_blank" href="/portfolio/js/subway_project/subway.html">
-              <div class="thumb-img">
-                 <img src="assets/images/thumbnails/subway.jpg"> 
-              </div>
-           </a>   
-              <div class="info">
-                  <div class="name">Type your message for subway passengers<br><br></div>
-                  <a target="_blank" href="https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/js/subway_project"><i class="fa fa-github"></i></a>
-                <div class="features">
-                    <span class="feature">HTML5</span>
-                    <span class="feature">CSS3</span>
-                    <span class="feature">JavaScript</span>
-                </div>  
-              </div>
-          </div>
-        </div>
-        
-         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-             <a target="_blank" href="/portfolio/js/color_project/color.html">
-              <div class="thumb-img">
-                 <img src="assets/images/thumbnails/color.jpg"> 
-              </div>
-            </a>  
-              <div class="info">
-                  <div class="name">JavaScript Game "Guess the RGB color"<br><br></div>
-                  <a target="_blank" href="https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/js/color_project"><i class="fa fa-github"></i></a>
-                <div class="features">
-                    <span class="feature">HTML5</span>
-                    <span class="feature">CSS3</span>
-                    <span class="feature">JavaScript</span>
-                </div>  
-              </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <a target="_blank" href="/portfolio/js/jquery/to_do_list/todo.html">
-              <div class="thumb-img">
-                 <img src="assets/images/thumbnails/todo.jpg"> 
-              </div>
-           </a>   
-              <div class="info">
-                  <div class="name">JQuery To Do List<br><br></div>
-                  <a target="_blank" href="https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/js/jquery/to_do_list"><i class="fa fa-github"></i></a>
-                <div class="features">
-                    <span class="feature">HTML5</span>
-                    <span class="feature">CSS3</span>
-                    <span class="feature">JQuery</span>
-                </div>  
-              </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-              <a target="_blank" href="/portfolio/css/css_blog_left_push_menu.html">
-              			<div class="thumb-img">
-                 <img src="assets/images/thumbnails/blog"> 
-              </div>
-              </a>
-              <div class="info">
-                  <div class="name">Blog Page with left-side menu<br><br></div>
-                  <a target="_blank" href="https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/css"><i class="fa fa-github"></i></a>
-                <div class="features">
-                    <span class="feature">HTML5</span>
-                    <span class="feature">CSS3</span>
-                </div>  
-              </div>
-          </div>
-        </div>
-          <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <a target="_blank" href="/portfolio/css/css_effects_img_gallery.html">
-              <div class="thumb-img">
-                 <img src="assets/images/thumbnails/images.jpg"> 
-              </div>
-           </a>   
-              <div class="info">
-                  <div class="name">Image Gallery with different CSS effects<br><br></div>
-                  <a target="_blank" href="https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/css"><i class="fa fa-github"></i></a>
-                <div class="features">
-                    <span class="feature">HTML5</span>
-                    <span class="feature">CSS3</span>
-                </div>  
-              </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <a target="_blank" href="/portfolio/css/img_fullscreen_slide_show_css.html">
-              <div class="thumb-img">
-                 <img src="assets/images/thumbnails/slider.jpg"> 
-              </div>
-           </a>   
-              <div class="info">
-                  <div class="name">Fullscreen CSS Slider<br><br> </div>
-                  <a target="_blank" href="https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/css"><i class="fa fa-github"></i></a>
-                <div class="features">
-                    <span class="feature">HTML5</span>
-                    <span class="feature">CSS3</span>
-                </div>  
-              </div>
-          </div>
-        </div>
-      
-       </div>
         </div>
      </div>
-      
+       </div>
   </section>
   <section id="3" class="about">
   	<div class="container">
@@ -303,7 +165,8 @@
         </div>
    </div>
   </section>
-    
+    <script src="assets/js/lib/angular.min.js"></script>
+    <script src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/lib/jquery-2.2.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
