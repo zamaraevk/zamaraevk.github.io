@@ -139,6 +139,10 @@ h2{
 	width:300px;
 	}
 /*Modal Window Style*/
+.modal {
+ top:none;
+ left:none;
+}
 .modal-open {
  overflow:scroll !important;
  padding-right:0px !important;
@@ -166,6 +170,7 @@ h2{
 }
 .modal-backdrop {
     background-color: transparent;
+    position:none;
 }
 div.modal div.modal-backdrop {
     z-index: 0;
