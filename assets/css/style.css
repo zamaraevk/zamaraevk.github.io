@@ -32,7 +32,7 @@ a:focus{
 		text-transform:uppercase;
 	}
 .jumbotron	button{
-	 margin-top:30px;
+	 margin-top:0px;
  	}		
 h2{
 		color:#21ce99;
@@ -134,16 +134,78 @@ h2{
 #email-form	{
 	width:300px;
 	}
+/*Modal Window Style*/
+.modal-content {
+	margin-top:100px;	
+	border-radius:0;
+		}
+.modal-header {
+    padding: 0;
+}
+.modal-title {
+	text-align:left;
+    background-color: #666;
+    color:#fff;
+    font-size: 14px;
+    padding: 15px;
+	}
+.close {
+    text-shadow:none;
+    color: #fff;
+}
+.modal-body {
+    padding: 0;
+}
+.form-group {
+    margin-bottom: 0;
+}
+.form-control {
+    border-radius:0px;
+    border-bottom:1px solid #ccc;
+    border-top:none;
+    border-left:none; 
+    border-right:none; 
+	outline:none;
+	height:40px;
+	font-size:14px;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	 }
+		
+.form-control:focus {
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	outline:none;
+	border:none;
+	border-bottom:1px solid #ccc;
+	}
 	
+#send {
+	margin: 15px;
+    
+	}
 /*Forms Style*/
-input:focus{
-		border:1px solid #21ce99 !important;
+#search {
+    margin-top: 50px;
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
 }
-.form-control{
-	color:#666666;
-	border:1px solid #21ce99;
-	border-radius:0px;
+#search:focus {
+    outline: none;
 }
+
+#search::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f002  '; color: #ccc }
+#search::-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #ccc } /* firefox 19+ */
+#search:-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #ccc } /* ie */
+input:-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #ccc }
+
+::-webkit-input-placeholder { color: #ccc }
+::-moz-placeholder { color: #ccc }
+:-ms-input-placeholder { color: #ccc }
+input:-moz-placeholder { color: #ccc }
+
+
 #navbar-search {
 	height:34px;
 	}
@@ -203,6 +265,9 @@ input:focus{
 	background-color:#eee;
 	text-align:center;
 	padding-bottom:25px;
+    transition: all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
 	}
 .thumbnail {
 	margin:50px auto 0px auto;
@@ -233,6 +298,7 @@ input:focus{
     margin: 0;
 }
 .name {
+    height: 36px;
     font-size: 13px;
     font-family: Helvetica;
     color: #666;
@@ -261,6 +327,7 @@ input:focus{
     color:white;
     padding: 1px 7px;
     border-radius: 25px;
+    margin-left: 5px;
 }
 /*2. About*/
 .about {
