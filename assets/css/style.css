@@ -141,6 +141,7 @@ h2{
 /*Modal Window Style*/
 .modal-open {
  overflow:scroll !important;
+ padding-right:0px !important;
 }
 .modal-content {
 	margin-top:100px;	
