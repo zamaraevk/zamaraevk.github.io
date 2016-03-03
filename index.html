@@ -58,46 +58,7 @@
         		<!-- Button to trigger modal --> 
             <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal"><i class="fa fa-envelope-o"></i></a>
             <a class="btn btn-primary" target="_blank" href="http://zamaraevk.github.io/assets/Konstantin_Zamaraev_Resume.pdf">Resume</a>
-            <!-- Modal -->
-            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">New Message</h4>
-                </div>
-                <div class="modal-body">
-                   <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
-                      <div class="form-group">
-                          <div class="col-md-12">
-                              <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
-                          </div>
-                      </div>
-                      <div class="form-group">
-                           <div class="col-md-12">
-                              <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
-                          </div>
-                      </div>
-                      <div class="form-group">
-                          <div class="col-md-12">
-                              <input type="email" class="form-control" id="email" name="email" placeholder="yourmail@mail.com"/>
-                          </div>
-                      </div>
-                      <div class="form-group">
-                          <div class="col-md-12">
-                              <textarea rows="6" class="form-control" id="comments" name="comments"></textarea>
-                          </div>
-                      </div>
-                      <div class="form-group">
-                          <div class="col-md-12">
-                              <button type="submit" value="Submit" id="send" class="btn btn-primary pull-right">Send</button>
-                          </div>
-                      </div>
-                  </form>
-                </div><!-- End of Modal body -->
-                </div><!-- End of Modal content -->
-                </div><!-- End of Modal dialog -->
-            </div><!-- End of Modal -->
+           
         
 
         <!-- submit end-->
@@ -208,6 +169,46 @@
         </div>
    </div>
   </section>
+   <!-- Modal -->
+            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">New Message</h4>
+                </div>
+                <div class="modal-body">
+                   <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+                      <div class="form-group">
+                          <div class="col-md-12">
+                              <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                           <div class="col-md-12">
+                              <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-md-12">
+                              <input type="email" class="form-control" id="email" name="email" placeholder="yourmail@mail.com"/>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-md-12">
+                              <textarea rows="6" class="form-control" id="comments" name="comments"></textarea>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-md-12">
+                              <button type="submit" value="Submit" id="send" class="btn btn-primary pull-right">Send</button>
+                          </div>
+                      </div>
+                  </form>
+                </div><!-- End of Modal body -->
+                </div><!-- End of Modal content -->
+                </div><!-- End of Modal dialog -->
+            </div><!-- End of Modal -->
       
     <script src="assets/js/lib/angular.min.js"></script>
     <script src="assets/js/app.js"></script>
