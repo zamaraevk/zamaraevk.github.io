@@ -161,6 +161,9 @@ h2{
 .modal-body {
     padding: 0;
 }
+.modal-backdrop {
+    background-color: transparent;
+}
 .form-group {
     margin-bottom: 0;
 }
@@ -193,6 +196,7 @@ h2{
     
 	}
 /*Forms Style*/
+
 #search {
     margin-top: 50px;
     width: 100%;
