@@ -103,12 +103,15 @@
    <section id="2" class="portfolio">
      <div class="container portfolio" ng-app="instantSearch" ng-controller="InstantSearchController">
          
-         <div class="bar">
+         <div class="row">
+             <div class="col-md-12">
 		<!-- Create a binding between the searchString model and the text field -->
-		<input type="text" ng-model="searchString" placeholder="Enter your search terms" />
+		<input type="text" id="search" ng-model="searchString" placeholder="Search..." />
 	     </div>
-       <div class="row">  
-        <div ng-repeat="i in items | searchFor:searchString" class="col-sm-6 col-md-4">
+         </div>
+         
+       <div class="row"> 
+         <div ng-repeat="i in items | searchFor:searchString" class="col-sm-6 col-md-4">
           <div class="thumbnail">
             <a target="_blank" href="{{i.url}}">
               <div class="thumb-img">
@@ -119,7 +122,7 @@
                   <div class="name">{{i.title}}</div>
                   <a target="_blank" href="{{i.url_git}}"><i class="fa fa-github"></i></a>
                 <div class="features">
-                    <span class="feature" ng-repeat="child in i.features">{{child.feature}}</span>
+                    <span class="feature" ng-repeat="child in i.features | searchFor:searchString">{{child.feature}}</span>
                 </div>  
               </div>
           </div>
