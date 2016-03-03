@@ -408,4 +408,8 @@ background-color:#21ce99;
 width:50%;
 margin:0 auto;
 }
+.modal {
+ top:0 !important;
+ left:0 !important;
+}
 }
