@@ -13,6 +13,7 @@ a:focus{
 }
 input {
     border-radius: 0;
+    -webkit-appearance: none;
 }
 /*Jumbo*/
 .jumbotron	h1{
