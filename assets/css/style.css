@@ -32,7 +32,7 @@ a:focus{
 		text-transform:uppercase;
 	}
 .jumbotron	button{
-	 margin-top:30px;
+	 margin-top:0px;
  	}		
 h2{
 		color:#21ce99;
@@ -134,7 +134,56 @@ h2{
 #email-form	{
 	width:300px;
 	}
+/*Modal Window Style*/
+.modal-content {
+	margin-top:100px;	
+	border-radius:0;
+		}
+.modal-header {
+    padding: 0;
+}
+.modal-title {
+	text-align:left;
+    background-color: #666;
+    color:#fff;
+    font-size: 14px;
+    padding: 15px;
+	}
+.close {
+    text-shadow:none;
+    color: #fff;
+}
+.modal-body {
+    padding: 0;
+}
+.form-group {
+    margin-bottom: 0;
+}
+.form-control {
+    border-radius:0px;
+    border-bottom:1px solid #ccc;
+    border-top:none;
+    border-left:none; 
+    border-right:none; 
+	outline:none;
+	height:40px;
+	font-size:14px;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	 }
+		
+.form-control:focus {
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	outline:none;
+	border:none;
+	border-bottom:1px solid #ccc;
+	}
 	
+#send {
+	margin: 15px;
+    
+	}
 /*Forms Style*/
 #search {
     margin-top: 50px;
@@ -146,9 +195,9 @@ h2{
     outline: none;
 }
 
-::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f002  '; color: #ccc }
-::-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #ccc } /* firefox 19+ */
-:-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #ccc } /* ie */
+#search::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f002  '; color: #ccc }
+#search::-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #ccc } /* firefox 19+ */
+#search:-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #ccc } /* ie */
 input:-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #ccc }
 
 ::-webkit-input-placeholder { color: #ccc }
@@ -156,11 +205,7 @@ input:-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  ';
 :-ms-input-placeholder { color: #ccc }
 input:-moz-placeholder { color: #ccc }
 
-.form-control{
-	color:#666666;
-	border:1px solid #21ce99;
-	border-radius:0px;
-}
+
 #navbar-search {
 	height:34px;
 	}
