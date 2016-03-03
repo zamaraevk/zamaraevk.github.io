@@ -139,6 +139,9 @@ h2{
 	width:300px;
 	}
 /*Modal Window Style*/
+.modal-open {
+ overflow:scroll !important;
+}
 .modal-content {
 	margin-top:100px;	
 	border-radius:0;
