@@ -38,9 +38,9 @@ $(document).ready(function () {
 
 //fade jumbotron
 
-$(window).scroll(function(){
-    $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 800);
-  });
+//$(window).scroll(function(){
+  //  $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 800);
+  //});
 
 //smooth scrolling
 
