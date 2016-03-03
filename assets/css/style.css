@@ -167,6 +167,9 @@ h2{
 .modal-backdrop {
     background-color: transparent;
 }
+div.modal div.modal-backdrop {
+    z-index: 0;
+}
 .form-group {
     margin-bottom: 0;
 }
