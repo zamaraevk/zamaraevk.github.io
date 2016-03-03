@@ -11,6 +11,9 @@ a:focus{
    border:none;
    outline:none;
 }
+input {
+    border-radius: 0;
+}
 /*Jumbo*/
 .jumbotron	h1{
 		color:#666;
