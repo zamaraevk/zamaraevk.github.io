@@ -207,11 +207,19 @@ div.modal div.modal-backdrop {
 	border:none;
 	border-bottom:1px solid #ccc;
 	}
-	
 #send {
 	margin: 15px;
-    
-	}
+    	}
+.alert {
+ text-align:center;
+ font-weight:bold;
+}
+.alert--success {
+color:#21ce99;
+}
+.alert--error {
+color:red;
+}
 /*Forms Style*/
 
 #search {
