@@ -167,6 +167,7 @@ h2{
 .close {
     text-shadow:none;
     color: #fff;
+    opacity:1;
 }
 .modal-body {
     padding: 0;
