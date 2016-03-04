@@ -413,4 +413,7 @@ margin:0 auto;
  top:0 !important;
  left:0 !important;
 }
+.modal-open {
+ overflow:hidden !important;
+}
 }
