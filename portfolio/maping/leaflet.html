@@ -11,6 +11,7 @@
     <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
     <script>
       function init() {
+          
         var mapMinZoom = 0;
         var mapMaxZoom = 6;
         var map = L.map('map', {
@@ -31,7 +32,22 @@
           noWrap: true,
           tms: false
         }).addTo(map);
-      }
+          
+        var greenIcon = L.icon({
+        iconUrl:'http://cdn.leafletjs.com/leaflet/v0.7.7/images/marker-icon.png',
+        
+       
+        iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+        shadowAnchor: [4, 62],  // the same for the shadow
+        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+            L.marker([-130, 130], {icon: greenIcon}).addTo(map).bindPopup("<b>Hello Dad:)</b>").openPopup();
+; 
+          
+ };
+        
+   
+        
     </script>
     <style>
       html, body, #map { width:100%; height:100%; margin:0; padding:0; }
