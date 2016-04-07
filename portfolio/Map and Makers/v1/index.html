@@ -2,15 +2,11 @@
 <html>
 <head>
 	<title>Project View</title>
-    
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="libs/leaflet.ie.css" /><![endif]-->
-    	<link rel="stylesheet" href="lib/Control.SimpleMarkers.css" />
-    
-	<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
-    	<script src="lib/Control.SimpleMarkers.js"></script>
-    
-	 <style type="text/css">
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="lib/SimpleMarkers/Control.SimpleMarkers.css" />
+    <script src="lib/leaflet/leaflet.js"></script>
+    <script src="lib/SimpleMarkers/Control.SimpleMarkers.js"></script>
+    <style type="text/css">
 	        body, html {
 	            height: 100%;
 	            
@@ -25,22 +21,21 @@
 </head>
 <body>
 	<div id="map"></div>
-	
 	<script type="text/JavaScript">
     
-        // Create the map
-		var osmUrl = '{z}/{x}/{y}.png',
-			osm = new L.TileLayer(osmUrl, {
-                maxZoom: 6,
-                noWrap: true
-            }),
-			map = new L.Map('map', {layers: [osm], center: new L.LatLng(39.8282, -98.5795), zoom: 4});
-        
-        
-        // Create the marker controls
-        var marker_controls = new L.Control.SimpleMarkers();
-        map.addControl(marker_controls);
-        
+    // Create the map
+    var osmUrl = '{z}/{x}/{y}.png',
+        osm = new L.TileLayer(osmUrl, {
+            maxZoom: 6,
+            noWrap: true
+        }),
+        map = new L.Map('map', {layers: [osm], center: new L.LatLng(39.8282, -98.5795), zoom: 4});
+
+
+    // Create the marker controls
+    var marker_controls = new L.Control.SimpleMarkers();
+    map.addControl(marker_controls);
+
 	</script>
 </body>
 </html>
