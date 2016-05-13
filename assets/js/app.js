@@ -44,7 +44,7 @@ app.controller('InstantSearchController',function($scope){
 	$scope.items = [
 		
         {
-			url: '/portfolio/email_portfolio/emailportfolio.html',
+			url: '',
             image: 'assets/images/thumbnails/emails.jpg',
 			title: 'Email library with mobile/desktop view',
             url_git: 'https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/email_portfolio',
