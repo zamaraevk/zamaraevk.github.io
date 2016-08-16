@@ -53,6 +53,18 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'MongoDB'}
                 ]
 			
+		},
+		{
+			url: 'https://your-favorite-artist.herokuapp.com/',
+            image: 'assets/images/thumbnails/artist.png',
+			title: 'Client-side web application. Search and view information about music artists',
+            url_git: 'https://github.com/zamaraevk/MVP-MKS',
+            features: [
+                {feature:'AngularJS'},
+                {feature:'Node.js'},
+                {feature:'Express'}
+                ]
+			
 		},	
 	 {
 			url: 'zamaraevk.github.io/portfolio/Map and Makers/v1/index.html',
