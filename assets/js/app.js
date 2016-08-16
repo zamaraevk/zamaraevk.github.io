@@ -42,6 +42,18 @@ app.controller('InstantSearchController',function($scope){
 	// tips on using AJAX.
 
 	$scope.items = [
+		{
+			url: 'http://drumboard.herokuapp.com/',
+            image: 'assets/images/thumbnails/sound.png',
+			title: 'React web application. Search/upload/bind sounds to the keyboard',
+            url_git: 'https://github.com/NeedsClosure/greenfieldSoundboard',
+            features: [
+                {feature:'React'},
+                {feature:'Node.js'},
+                {feature:'MongoDB'}
+                ]
+			
+		},
 	{
 			url: 'http://your-fridge.herokuapp.com/',
             image: 'assets/images/thumbnails/fridge.png',
