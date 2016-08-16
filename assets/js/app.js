@@ -45,12 +45,11 @@ app.controller('InstantSearchController',function($scope){
 	{
 			url: 'http://your-fridge.herokuapp.com/',
             image: 'assets/images/thumbnails/fridge.png',
-			title: 'Web application that allows users to create personal tasks, assign tasks for other users and organize group tasks',
+			title: 'Full stack web application that allows users to organize group tasks',
             url_git: 'https://github.com/NeedsClosure/NeedsClosure',
             features: [
                 {feature:'AngularJS'},
                 {feature:'Node.js'},
-                {feature:'Express'},
                 {feature:'MongoDB'}
                 ]
 			
