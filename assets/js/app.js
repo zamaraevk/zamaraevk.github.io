@@ -49,7 +49,7 @@ app.controller('InstantSearchController',function($scope){
             url_git: 'https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/Map%20and%20Makers/v1',
             features: [
                 {feature:'JavaScript'},
-                {feature:'leaflet'}
+                {feature:'Leaflet'}
                 ]
 			
 		},	
