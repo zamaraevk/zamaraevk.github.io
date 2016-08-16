@@ -42,6 +42,19 @@ app.controller('InstantSearchController',function($scope){
 	// tips on using AJAX.
 
 	$scope.items = [
+	{
+			url: 'http://your-fridge.herokuapp.com/',
+            image: 'assets/images/thumbnails/fridge.png',
+			title: 'Web application that allows users to create personal tasks, assign tasks for other users and organize group tasks',
+            url_git: 'https://github.com/NeedsClosure/NeedsClosure',
+            features: [
+                {feature:'AngularJS'},
+                {feature:'Node.js'},
+                {feature:'Express'},
+                {feature:'MongoDB'}
+                ]
+			
+		},	
 	 {
 			url: 'zamaraevk.github.io/portfolio/Map and Makers/v1/index.html',
             image: 'assets/images/thumbnails/map.png',
