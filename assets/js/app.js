@@ -42,7 +42,17 @@ app.controller('InstantSearchController',function($scope){
 	// tips on using AJAX.
 
 	$scope.items = [
-		
+	 {
+			url: 'zamaraevk.github.io/portfolio/Map and Makers/v1/index.html',
+            image: 'assets/images/thumbnails/map.png',
+			title: 'Tiling concept for heavy SVG',
+            url_git: 'https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/Map%20and%20Makers/v1',
+            features: [
+                {feature:'JavaScript'},
+                {feature:'leaflet'}
+                ]
+			
+		},	
         {
 			url: 'http://konstantin.nyc/portfolio/email_portfolio/emailportfolio.html',
             image: 'assets/images/thumbnails/emails.jpg',
