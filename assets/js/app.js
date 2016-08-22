@@ -43,6 +43,18 @@ app.controller('InstantSearchController',function($scope){
 
 	$scope.items = [
 		{
+		url: 'http://wegotoo.herokuapp.com/',
+            image: 'assets/images/thumbnails/wegoto_thumb.png',
+        	title: 'Full stack React Native web application.',
+            url_git: 'https://github.com/KarmicKoalas/KarmicKoalas',
+            features: [
+                {feature:'React Native'},
+                {feature:'Node.js'},
+                {feature:'MySQL'}
+                ]
+			
+		},
+		{
 			url: 'http://drumboard.herokuapp.com/',
             image: 'assets/images/thumbnails/sound.png',
 			title: 'Full stack React web application. Search/upload/bind sounds to the keyboard',
