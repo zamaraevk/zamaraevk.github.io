@@ -6,14 +6,17 @@ body {
 a,
 a:hover,
 a:focus{
-   color:#21ce99; 
+   color:#21ce99;
    text-decoration: none;
    border:none;
    outline:none;
 }
 input {
     border-radius: 0;
-   
+
+}
+.center {
+  text-align: center;
 }
 /*Jumbo*/
 .jumbotron	h1{
@@ -37,15 +40,16 @@ input {
 	}
 .jumbotron	button{
 	 margin-top:0px;
- 	}		
+ 	}
 h2{
 		color:#21ce99;
 		padding:20px 0px;
-		font-size:24px;
-                text-transform:uppercase;
-		
+		font-size:60px;
+    font-weight: bold;
+    text-transform:uppercase;
+
  }
-	
+
 
 /*Nav*/
 .navbar {
@@ -82,14 +86,14 @@ h2{
 	font-weight:600;
 	text-transform:uppercase;
 	border-bottom:2px solid #fff;
-	
+
 	transition: all 0.4s ease;
 	-webkit-transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
 		}
 .navbar-default .navbar-nav>li>a>i {
 	font-size:18px;
-		}			
+		}
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus{
 	color: #21ce99;
@@ -97,18 +101,18 @@ h2{
 	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	color: #21ce99;
 	background:#fff;
-		}	
+		}
 .active {
 	color: #21ce99 !important;
 	background:#fff;
 	border-bottom:2px solid #21ce99 !important;
-	}	
+	}
 /*Mobile Menu*/
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	border-color:transparent;
 	text-align:center;
 	}
-/*Sandwich*/	
+/*Sandwich*/
 .navbar-default .navbar-toggle .icon-bar {
 	background-color:black;
 	}
@@ -134,7 +138,7 @@ h2{
     -o-background-size: cover;      /* Opera*/
     background-size: cover;         /* Generic*/
 	}
-	
+
 #email-form	{
 	width:300px;
 	}
@@ -148,7 +152,7 @@ h2{
  padding-right:0px !important;
 }
 .modal-content {
-	margin-top:100px;	
+	margin-top:100px;
 	border-radius:0;
 		}
 .modal-dialog{
@@ -188,18 +192,18 @@ div.modal div.modal-backdrop {
     border-radius:0px;
     -moz-border-radius:0px;
     -webkit-border-radius:0px;
-    
+
     border-bottom:1px solid #ccc;
     border-top:none;
-    border-left:none; 
-    border-right:none; 
+    border-left:none;
+    border-right:none;
 	outline:none;
 	height:40px;
 	font-size:14px;
 	box-shadow:none;
 	-webkit-box-shadow:none;
 	 }
-		
+
 .form-control:focus {
 	box-shadow:none;
 	-webkit-box-shadow:none;
@@ -228,7 +232,7 @@ color:red;
     font-size: 32px;
     text-align: center;
     border:1px solid #ccc;
-  
+
 }
 #search:focus {
     outline: none;
@@ -248,7 +252,7 @@ input:-moz-placeholder { color: #ccc }
 #navbar-search {
 	height:34px;
 	}
-/*Custom Buttons Style*/	
+/*Custom Buttons Style*/
 .btn {
     padding: 10px 20px;
     border: 0 none;
@@ -257,7 +261,7 @@ input:-moz-placeholder { color: #ccc }
     text-transform: uppercase;
 				font-size:16px;
 }
- 
+
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
 				box-shadow:none;
@@ -266,14 +270,14 @@ input:-moz-placeholder { color: #ccc }
 				border:2px solid #21ce99;
 				border-radius:0;
 }
- 
+
 .btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background:transparent;
     color: #21ce99;
 				border:2px solid #21ce99;
 				border-radius:0;
 }
- 
+
 /*Sections*/
 /*0. Note*/
 .note {
@@ -284,7 +288,7 @@ input:-moz-placeholder { color: #ccc }
 	background-color:#fff;
 	}
 .note p{
-	
+
     font-size:18px;
 	color:#666;
 }
@@ -314,7 +318,7 @@ input:-moz-placeholder { color: #ccc }
  width: 304px;
 	height:250px;
 	border-radius:0;
-	}	
+	}
 .thumbnail:hover{
     border: 1px solid #666;
     box-shadow: 0 0 3px rgba(0,0,0,0.1);
@@ -325,7 +329,7 @@ input:-moz-placeholder { color: #ccc }
     width: 302px;
     height:150px;
     border-bottom: 1px solid #ccc;
-    
+
 }
 .thumb-img img {
     width: 100%;
@@ -394,7 +398,7 @@ input:-moz-placeholder { color: #ccc }
 			font-size:24px;
 			margin:0 20px;
 			color:#fff;
-}	
+}
 @media (max-width: 767px) {
   .jumbotron h1 {
     margin-top:150px;
@@ -404,9 +408,9 @@ input:-moz-placeholder { color: #ccc }
     color:#fff !important;
   }
   .navbar-nav {
-  margin:0;	
+  margin:0;
   }
-  
+
 .nav>li {
 margin-bottom:5px;
 }
@@ -429,4 +433,22 @@ margin:0 auto;
 .modal.in .modal-dialog {
  height:100%;
 }
+}
+
+.idea {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 60px;
+  color: #666;
+  font-weight: bold;
+}
+.klas {
+  min-width: 500px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+}
+.skills {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

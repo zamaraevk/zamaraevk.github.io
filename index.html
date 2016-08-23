@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,7 +33,7 @@
           </button>
           <a class="navbar-brand" id="home" href="#1">KONSTANTIN<span id="nyc">.NYC</span></a>
         </div>
-    
+
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
@@ -52,23 +53,44 @@
     <!-- jumbotron -->
     <div class="jumbotron" id="1">
       <div class="container">
-   
-        <h1>"The only way to do great work is to love what you do." Steve Jobs</h1>
-        <p>Software Engineer</p>
-  
+
+        <h1>Always deliver more than expected. — Larry Page</h1>
+        <p>Konstantin Zamaraev <br/><span style="font-size:14px; color:#666;">Software Engineer</span></p>
+
         <!-- submit -->
-       
-        		<!-- Button to trigger modal --> 
-            <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal"><i class="fa fa-envelope-o"></i></a>
+
+        		<!-- Button to trigger modal -->
+            <a href="mailto:zamaraevk@gmail.com" role="button" class="btn btn-primary" data-toggle="modal"><i class="fa fa-envelope-o"></i></a>
             <a class="btn btn-primary" target="_blank" href="http://zamaraevk.github.io/assets/Konstantin_Zamaraev_Resume.pdf">Resume</a>
-           
-        
+
+
 
         <!-- submit end-->
       </div>
     </div>
      <!-- jumbotron end-->
-   
+    <section id="4" class="feat">
+      <div class="container center">
+        <div class="row skills">
+          <div class="col-md-4 center">
+            <div>
+              <img src="assets/images/full.png">
+            </div>
+          </div>
+          <div class="col-md-4 center">
+            <div>
+              <img src="assets/images/designer.jpg">
+            </div>
+          </div>
+          <div class="col-md-4 center">
+            <div>
+              <img src="assets/images/product.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
    <section id="2" class="portfolio">
      <div class="container portfolio" ng-app="instantSearch" ng-controller="InstantSearchController">
          <div class="row">
@@ -77,20 +99,20 @@
 		       <input type="text" id="search" ng-model="searchString" placeholder="Search..." />
 	       </div>
          </div>
-       <div class="row"> 
+       <div class="row">
          <div ng-repeat="i in items | searchFor:searchString" class="col-sm-6 col-md-4">
           <div class="thumbnail">
             <a target="_blank" href="{{i.url}}">
               <div class="thumb-img">
-                 <img ng-src="{{i.image}}"> 
+                 <img ng-src="{{i.image}}">
               </div>
-            </a>  
+            </a>
               <div class="info">
                   <div class="name">{{i.title}}</div>
                   <a target="_blank" href="{{i.url_git}}"><i class="fa fa-github"></i></a>
                 <div class="features">
                     <span class="feature" ng-repeat="child in i.features | searchFor:searchString">{{child.feature}}</span>
-                </div>  
+                </div>
               </div>
           </div>
         </div>
@@ -100,33 +122,36 @@
   <section id="3" class="about">
   	<div class="container">
      <div class="row">
-     				<h2>Hi, I'm Konstantin, Software Engineer</h2>
+     				<h2>ABOUT</h2>
          <div class="col-md-6">
          	<img src="assets/images/portfolio_pic.jpg" alt="Konstantin Zamaraev" width="100%" style="padding-bottom:25px;">
          </div>
          <div class="col-md-6">
-         	 <p> I graduated as an Engineer at Ufa State Petroleum Technological University in Russia in 2009, where I studied fundamentals of Computer Science and began building websites as a hobby. </p>
-          
-          <p> In 2014, I moved to New York and and started to learn in depth about modern tools, frameworks and ways of creating digital experience. So far, I covered Responsive Design, Bootstrap 3, Sass, jQuery and Git. 
-          
-          I've worked for the Creative Circle agency as a freelancer and at the end of 2014 I started work as an email specialist at the marketing company Affinity Solutions, where I have been responsible for building and delivering HTML emails. 
-          
-          <p>I have become very interested in MVC and covered some Ruby on Rails, but I have since changed my direction to JavaScript. I just fell in love with idea of using one language across full-stack development.</p>
-          
-          <p>Currently looking for the full-time postion</p>
-          
-             <p> Let's work together. Email me <a href="mailto:zamaraevk@gmail.com">here</a>. </p>
+         	 <p>I graduated as an Engineer from Ufa State Petroleum Technological University in Russia in 2009,
+              where I studied the Computer Science fundamentals and first began building websites.
+
+          <p>In 2014, I moved to New York and gained an in-depth perspective about modern web frameworks.
+             Since then, I've worked for Creative Circle Agency as a freelancer and as an email marketing specialist
+              at Affinity Solutions, where I used HTML and CSS to deliver sleek email marketing campaigns to millions of users.
+         </p>
+          <p>I became increasingly interested in JavaScript and decided to spend my summer at MakerSquare — an intense 3-month
+             software engineering training program. Here, I led agile teams in full-stack web and mobile app devlopment,
+              leveraging multiple frameworks including React, React Native, AngularJS, Node.js, MongoDB, and SQL.
+          </p>
+          <p>I am currently seeking work on a fast-paced team where I can contribute my skill and passion for intuitive and
+             responsive front-end interfaces combined with strategically architected backends. I look forward to hearing from you.</p>
+             <p>Email me <a href="mailto:zamaraevk@gmail.com">here</a>. </p>
          </div>
     </div>
   </div>
- </section>        
+ </section>
   <section id="footer">
   	<div class="container">
    		<div class="row">
      			 <div class="col-md-8">
          		<p>&copy; 2016 - Portfolio Konstantin Zamaraev. All rights reserved.</p>
          </div>
-         
+
          <div class="col-md-4">
          		<a target="_blank" href="https://www.linkedin.com/in/konstantin-zamaraev-2441756b"><i class="fa fa-linkedin-square"></i></a>
            <a target="_blank" href="https://www.facebook.com/konstantin.zamaraev.9"><i class="fa fa-facebook-square"></i></a>
@@ -175,7 +200,7 @@
                 </div><!-- End of Modal content -->
                 </div><!-- End of Modal dialog -->
             </div><!-- End of Modal -->
-      
+
     <script src="assets/js/lib/angular.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/lib/jquery-2.2.0.min.js"></script>

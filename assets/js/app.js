@@ -45,14 +45,14 @@ app.controller('InstantSearchController',function($scope){
 		{
 		url: 'http://wegotoo.herokuapp.com/',
             image: 'assets/images/thumbnails/wegoto_thumb.png',
-        	title: 'Full stack React Native web application.',
+        	title: 'Full stack React Native iOS application based on native maps',
             url_git: 'https://github.com/KarmicKoalas/KarmicKoalas',
             features: [
                 {feature:'React Native'},
                 {feature:'Node.js'},
                 {feature:'MySQL'}
                 ]
-			
+
 		},
 		{
 			url: 'http://drumboard.herokuapp.com/',
@@ -64,7 +64,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'Node.js'},
                 {feature:'MongoDB'}
                 ]
-			
+
 		},
 	{
 			url: 'http://your-fridge.herokuapp.com/',
@@ -76,7 +76,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'Node.js'},
                 {feature:'MongoDB'}
                 ]
-			
+
 		},
 		{
 			url: 'https://your-favorite-artist.herokuapp.com/',
@@ -88,8 +88,8 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'Node.js'},
                 {feature:'Express'}
                 ]
-			
-		},	
+
+		},
 	 {
 			url: 'zamaraevk.github.io/portfolio/Map and Makers/v1/index.html',
             image: 'assets/images/thumbnails/map.png',
@@ -99,8 +99,8 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'JavaScript'},
                 {feature:'Leaflet'}
                 ]
-			
-		},	
+
+		},
         {
 			url: 'http://konstantin.nyc/portfolio/email_portfolio/emailportfolio.html',
             image: 'assets/images/thumbnails/emails.jpg',
@@ -110,7 +110,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'Bootstrap 3'},
                 {feature:'HTML Email'}
                 ]
-			
+
 		},
 		{
 			url: 'http://www.granser.us',
@@ -120,7 +120,7 @@ app.controller('InstantSearchController',function($scope){
             features: [
                 {feature:'Wordpress Theme Cusomization'}
                 ]
-			
+
 		},
 		{
 			url: '/portfolio/js/angularjs/ang.htm',
@@ -131,7 +131,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'AngularJS'},
                 {feature:'Bootstrap 3'}
                 ]
-			
+
 		},
 		{
 			url: '/portfolio/js/subway_project/subway.html',
@@ -143,7 +143,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'CSS3'},
                 {feature:'JavaScript'}
                 ]
-			
+
 		},
 		{
 			url: '/portfolio/js/color_project/color.html',
@@ -155,7 +155,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'CSS3'},
                 {feature:'JavaScript'}
                 ]
-			
+
 		},
 		{
 			url: '/portfolio/js/jquery/to_do_list/todo.html',
@@ -167,7 +167,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'CSS3'},
                 {feature:'JQuery'}
                 ]
-			
+
 		},
 		{
 			url: '/portfolio/css/css_blog_left_push_menu.html',
@@ -178,7 +178,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'HTML5'},
                 {feature:'CSS3'}
                 ]
-			
+
 		},
         {
 			url: '/portfolio/css/css_effects_img_gallery.html',
@@ -189,7 +189,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'HTML5'},
                 {feature:'CSS3'}
                 ]
-			
+
 		},
         {
 			url: '/portfolio/css/img_fullscreen_slide_show_css.html',
@@ -200,7 +200,7 @@ app.controller('InstantSearchController',function($scope){
                 {feature:'HTML5'},
                 {feature:'CSS3'}
                 ]
-			
+
 		}
 	];
 
