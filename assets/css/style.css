@@ -434,7 +434,9 @@ margin:0 auto;
  height:100%;
 }
 }
+@media (max-width: 767px) {
 
+}
 .idea {
   margin-top: 50px;
   margin-bottom: 25px;
