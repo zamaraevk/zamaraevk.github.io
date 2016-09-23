@@ -55,6 +55,18 @@ app.controller('InstantSearchController',function($scope){
 
 		},
 		{
+			url: 'http://konstantin.nyc/portfolio/js/phq-9/index.html',
+            image: 'assets/images/thumbnails/react_client.png',
+			title: 'Client-side React web application. Quiz PHQ-9 for healthcare',
+            url_git: 'https://github.com/zamaraevk/phq-9',
+            features: [
+                {feature:'React'},
+                {feature:'Babel'},
+                {feature:'Webpack'}
+                ]
+
+		},
+		{
 			url: 'http://drumboard.herokuapp.com/',
             image: 'assets/images/thumbnails/sound.png',
 			title: 'Full stack React web application. Search/upload/bind sounds to the keyboard',
