@@ -55,7 +55,7 @@ app.controller('InstantSearchController',function($scope){
 
 		},
 		{
-			url: 'http://konstantin.nyc/portfolio/js/phq-9/index.html',
+			url: 'https://github.com/zamaraevk/phq-9',
             image: 'assets/images/thumbnails/react_client.png',
 			title: 'Client-side React web application. Quiz PHQ-9 for healthcare',
             url_git: 'https://github.com/zamaraevk/phq-9',
