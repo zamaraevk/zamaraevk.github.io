@@ -101,6 +101,17 @@ app.controller('InstantSearchController',function($scope){
                 ]
 
 		},
+		{
+			url: 'http://konstantin.nyc/portfolio/js/draganddrop/index.html',
+				image: 'assets/images/thumbnails/dragdrop.png',
+				title: 'jQuery Drag and Drop + AJAX',
+				url_git: 'https://github.com/zamaraevk/zamaraevk.github.io/tree/master/portfolio/js/draganddrop',
+				features: [
+						{feature:'jQuery'},
+						{feature:'jQuery UI'}
+						]
+
+					},
         {
 			url: 'http://konstantin.nyc/portfolio/email_portfolio/emailportfolio.html',
             image: 'assets/images/thumbnails/emails.jpg',
