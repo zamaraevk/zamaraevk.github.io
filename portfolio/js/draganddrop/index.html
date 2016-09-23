@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VaynerMedia</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="main.js"></script>
+  <script>
+  $(document).ready(function() {
+      var $tabs=$('#table-draggable2')
+      $( "div.connectedSortable" )
+          .sortable({
+              connectWith: "div.connectedSortable",
+              items: "> .row",
+              appendTo: $tabs,
+              helper:"clone",
+              zIndex: 999990,
+              update: function( event, ui ) {
+                $.ajax({
+                  url: app.server + '/users?id=1&id=2',
+                  method: 'GET'
+                }).then(function(data) {
+                    console.log("It's time to update ui");
+                });
+              }
+          })
+          .disableSelection();
+  });
+  </script>
+  <script>
+    $(app.init.bind(app));
+  </script>
+  <body>
+    <header class="header"><a href="http://konstantin.nyc">KONSTANTIN<span class="logo">.NYC</span></a><span class="love"><i class="fa fa-heart" aria-hidden="true"></i> made with love</span></header>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div id="user1" class="user"></div>
+        <div id='table-draggable1'>
+            <div class="connectedSortable">
+            </div>
+        </div>
+      </div>
+      <div class="flex-item">
+        <div id="user2" class="user"></div>
+        <div id='table-draggable2'>
+            <div class="connectedSortable">
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
