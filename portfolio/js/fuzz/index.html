@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <title>Fuzz Quiz</title>
+  <style type="text/css">
+    body {
+      text-align: center;
+      font-family: monospace;
+    }
+    #buttons {
+      padding: 15px;
+      width: 100%;
+    }
+    #app {
+      margin: 0px auto;
+      max-width: 960px;
+    }
+  </style>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      const message = "Elegantly unscramble this message using the space provided. Then write the scrambler that made it. The answer is an object with global scope that can scramble and unscramble any text any number of times.";
+      app.scramble(message);
+      $("#scrambleButton").click(() => app.scramble(message));
+      $("#unscrambleButton").click(() => app.unscramble());
+    });
+  </script>
+</head>
+<body>
+  <div id="buttons">
+    <input class="btn btn-danger" id="scrambleButton" type="button" value="Scramble">
+    <input class="btn btn-success" id="unscrambleButton" type="button" value="Unscramble">
+  </div>
+  <div id="app"></div>
+</body>
+</html>
