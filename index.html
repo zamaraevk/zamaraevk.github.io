@@ -68,30 +68,14 @@
 
         <!-- submit end-->
       </div>
-    </div>
-     <!-- jumbotron end-->
-    <section id="4" class="feat">
-      <div class="container center">
-        <div class="row skills">
-          <div class="col-md-4 center">
-            <div>
-              <img style="f" src="assets/images/full.png">
-            </div>
-          </div>
-          <div class="col-md-4 center">
-            <div>
-              <img style="f" src="assets/images/designer.jpg">
-            </div>
-          </div>
-          <div class="col-md-4 center">
-            <div>
-              <img style="f" src="assets/images/product.png">
-            </div>
-          </div>
+      <div id="hero-bottom">
+        <div id="circle-wrapper">
+          <img id="image-gif" style="f" src="assets/gif/konstantin-static.jpg">
+          <p style="margin: 0px; font-size: 14px;">projects</p>
         </div>
       </div>
-    </section>
-
+    </div>
+     <!-- jumbotron end-->
    <section id="2" class="portfolio">
      <div class="container portfolio" ng-app="instantSearch" ng-controller="InstantSearchController">
          <div class="row">
@@ -210,5 +194,17 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/lib/bootstrap.min.js"></script>
     <script src="assets/js/formspree.js"></script>
+    <script>
+        $(function() {
+            $("#image-gif").hover(
+                function() {
+                    $(this).attr("src", "assets/gif/konstantin.gif");
+                },
+                function() {
+                    $(this).attr("src", "assets/gif/konstantin-static.jpg");
+                }
+            );
+        });
+    </script>
   </body>
 </html>

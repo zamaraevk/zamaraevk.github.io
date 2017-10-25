@@ -454,3 +454,26 @@ margin:0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
+/*
+Here is styles for new gif section
+*/
+#hero-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  text-align: -webkit-center
+}
+#circle-wrapper {
+  margin: 50px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+}
+#image-gif {
+  width: 100px;
+  margin-top: 20px;
+  opacity: 0.5;
+}
